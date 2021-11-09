@@ -1,0 +1,249 @@
+*,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-size: 100%;
+  font-family: "Gotham", sans-serif;
+  user-select: none;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+  align-items: center;
+  height: 100px;
+}
+#main-logo {
+  width: 100px;
+  cursor: pointer;
+}
+#main-title {
+  cursor: pointer;
+}
+#logo-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  vertical-align: middle;
+}
+#cart-logo {
+  width: 50px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+#cart-wrapper {
+  padding-right: 20px;
+}
+.topnav {
+  display: flex;
+  padding-right: 200px;
+}
+.button-nav {
+  margin: 20px;
+  border: none;
+  background: none;
+  border-radius: 15px;
+  font-family: "Gotham", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 8px;
+  transition: 0.4s;
+}
+.button-nav:hover {
+  background-color: rgba(0, 0, 0, 0.082);
+}
+.footer {
+  text-align: center;
+  font-family: "Gotham", sans-serif;
+  height: 50px;
+  margin-top: 20px;
+}
+.link {
+  text-decoration: none;
+  font-size: 20px;
+}
+.link:active {
+  color: black;
+}
+.link:visited {
+  color: rgb(19, 17, 17);
+}
+.active {
+  background-color: rgba(0, 0, 0, 0.082);
+}
+#custom-bottle {
+  color: white;
+  margin: 20px;
+  border-radius: 15px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.719);
+  font-family: "Gotham", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 15px;
+  transition: 0.4s;
+  margin-top: 50px;
+}
+#custom-bottle:hover {
+  background-color: rgba(0, 0, 0, 0.411);
+}
+#head-wrapper {
+  height: 40px;
+}
+.water-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.4s;
+  height: 100%;
+  padding-top: 20px;
+}
+.bottle-img {
+  margin-top: 50px;
+  width: 400px;
+  height: 400px;
+  justify-content: center;
+  transition: 0.4s;
+}
+.text {
+  opacity: 0;
+  transition: opacity 525ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.fade {
+  opacity: 1;
+  transition: opacity 600ms cubic-bezier(0, -0.18, 0.99, 0.96);
+}
+.bottle-img-construct {
+  height: 600px;
+}
+#main {
+  background-color: #e5e7eb;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.card {
+  background-color: white;
+  border-radius: 15px;
+  width: 820px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+.all-cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.constructor-img {
+  width: 150px;
+  cursor: pointer;
+  padding: 0;
+}
+.card1-wrapper,
+.card2-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+.bottle-liter {
+  font-size: 20px;
+  font-family: "Gotham", sans-serif;
+  text-align: center;
+}
+.bottle-wrapper {
+  border-radius: 15px;
+  transition: 0.4s;
+  padding-bottom: 7px;
+  margin: 5px;
+}
+.bottle-wrapper:hover {
+  background-color: rgba(0, 0, 0, 0.082);
+}
+.constructor-page {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+}
+.constructor-page > div {
+  margin: 50px;
+}
+.gas-wrapper,
+.material-wrapper,
+.price-wrapper {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 5px;
+}
+.builder-title {
+  margin-bottom: 10px;
+}
+.gas-button,
+.order-button,
+.material-button {
+  font-weight: 500;
+  font-size: 18px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 15px;
+  padding: 10px;
+  transition: 0.4s;
+}
+.gas-button:hover,
+.order-button:hover,
+.material-button:hover {
+  background-color: rgba(0, 0, 0, 0.082);
+}
+.builder-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#input-amount {
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-family: "Gotham", sans-serif;
+  text-align: center;
+  font-weight: 500;
+  padding: 10px;
+  height: 60px;
+  width: 200px;
+}
+.vertical-wrapper,
+.price-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+.price-wrapper {
+  height: 60px;
+  width: 412px;
+}
+.price-wrapper > div {
+  margin: 20px;
+}
+.price-field {
+  font-size: 30px;
+}
