@@ -1,6 +1,7 @@
 import loadConstructorPage from "./constructor";
 import loadCartPage from "./cart-page";
 import cartModule from "./cart-logic";
+import createWelcome from "./bottle-welcome";
 
 function createHeader() {
   const header = document.createElement("div");
@@ -14,12 +15,17 @@ function createHeader() {
   const bradfordTitle = document.createElement("h1");
   bradfordTitle.setAttribute("id", "main-title");
   bradfordTitle.textContent = "Bradford";
+  bradfordTitle.addEventListener("click", () => {
+    createWelcome();
+  });
 
   const logoWrapper = document.createElement("div");
   logoWrapper.setAttribute("id", "logo-wrapper");
-
   logoWrapper.appendChild(bradfordLogo);
   logoWrapper.appendChild(bradfordTitle);
+  logoWrapper.addEventListener("click", () => {
+    createWelcome();
+  });
 
   const cartIcon = document.createElement("img");
   cartIcon.setAttribute("id", "cart-logo");
@@ -132,6 +138,7 @@ function createMain() {
 
 function buildPage() {
   const content = document.querySelector("#content");
+  content.innerHTML = "";
 
   content.appendChild(createHeader());
   content.appendChild(createMain());
@@ -139,6 +146,19 @@ function buildPage() {
   setActive(document.querySelector(".button-nav"));
   loadConstructorPage("Vershina", "Polyana Kvasova");
   cartModule.getLocal();
+
+  const header = document.querySelector(".header");
+  const main = document.querySelector("#main");
+  const footer = document.querySelector(".footer");
+
+  console.log(header, main, footer);
+
+  window.getComputedStyle(header).opacity;
+  header.style.opacity = 1;
+  window.getComputedStyle(main).opacity;
+  main.style.opacity = 1;
+  window.getComputedStyle(footer).opacity;
+  footer.style.opacity = 1;
 }
 
 export default buildPage;

@@ -6,7 +6,7 @@ body {
 
 body {
   background-size: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: "Gotham", sans-serif;
   user-select: none;
 }
 .header {
@@ -15,6 +15,8 @@ body {
   vertical-align: middle;
   align-items: center;
   height: 100px;
+  transition: 0.7s;
+  opacity: 0;
 }
 #main-logo {
   width: 100px;
@@ -56,7 +58,7 @@ body {
   border: none;
   background: none;
   border-radius: 15px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Gotham", sans-serif;
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
@@ -68,9 +70,11 @@ body {
 }
 .footer {
   text-align: center;
-  font-family: "Roboto", sans-serif;
+  font-family: "Gotham", sans-serif;
   height: 50px;
   margin-top: 20px;
+  transition: 0.7s;
+  opacity: 0;
 }
 .link {
   text-decoration: none;
@@ -91,7 +95,7 @@ body {
   border-radius: 15px;
   border: none;
   background-color: rgba(0, 0, 0, 0.719);
-  font-family: "Roboto", sans-serif;
+  font-family: "Gotham", sans-serif;
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
@@ -138,6 +142,8 @@ body {
   align-items: center;
   justify-content: center;
   display: flex;
+  transition: 0.7s;
+  opacity: 0;
 }
 
 .card {
@@ -171,7 +177,7 @@ body {
 }
 .bottle-liter {
   font-size: 20px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Gotham", sans-serif;
   text-align: center;
 }
 .bottle-wrapper {
@@ -201,12 +207,6 @@ body {
   border-radius: 15px;
   padding: 10px;
   margin: 5px;
-}
-.vertical-wrapper {
-  min-width: 420px;
-}
-.gas-wrapper {
-  min-width: 405px;
 }
 .builder-title {
   margin-bottom: 10px;
@@ -238,7 +238,7 @@ body {
   border: none;
   outline: none;
   font-size: 18px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Gotham", sans-serif;
   text-align: center;
   font-weight: 500;
   padding: 10px;
@@ -255,7 +255,7 @@ body {
 }
 .price-wrapper {
   height: 60px;
-  width: 408px;
+  width: 412px;
 }
 .price-wrapper > div {
   margin: 20px;
@@ -370,4 +370,49 @@ table th {
   margin-top: 330px;
   transition: 0.4s;
   opacity: 0;
+}
+.left-wrapper {
+  display: flex;
+  width: 60vh;
+}
+.main-logo {
+  height: 420px;
+}
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  font-size: 60px;
+}
+.welcome-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  vertical-align: middle;
+  transition: 0.7s;
+  opacity: 0;
+}
+.right-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5e7eb;
+  height: 100vh;
+  width: 70vh;
+}
+.main-button {
+  font-size: 50px;
+  border-radius: 15px;
+  background-color: white;
+  margin: 30px;
+  padding: 15px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.main-button:hover {
+  background-color: #000000;
+  color: white;
+}
+.left-wrapper h2 {
+  color: #6b7280;
 }
